@@ -1,20 +1,18 @@
-Testing througout the software development cycle.
+Testing throughout the software development cycle.
 
-ISTQB
-
-international software testing qualifications board
+ISTQB - international software testing qualifications board
 
 ---------------------
 
 SDLC - Software development life cycle.
-- a systamatic plan for the project
+- a systematic plan for the project
 - smooth progress
 - lower cost
 
-A model that describes the type of activity performed at each stage in the software development project, and how the activities relate to one anouther logically and chronologically
+A model that describes the type of activity performed at each stage in the software development project, and how the activities relate to one another logically and chronologically
 
 Two types of models
-- sequental
+- sequential
 - Iterative
 
 stages
@@ -27,7 +25,7 @@ stages
 
 Iterative works on a basis of short term "time cycles" i.e. what can we do in the nex 2 weeks.
 
-Models are simplications of reality
+Models are implications of reality
 Iterative is not better than iterative
 Different models can be mixed e.g. front end and back end are done differently
 
@@ -35,10 +33,10 @@ Different models can be mixed e.g. front end and back end are done differently
 
 Test Levels - testing small units to testing the whole
 
-Componant testing - testing the smallest units
-intergration testing - tesing units added gradualty to each other
-system testing - testing the whoole through an interface
-Acceptanct testing - given to the end user to see if it meets thier criteria
+Component testing - testing the smallest units
+integration testing - testing units added gradually to each other
+system testing - testing the whole through an interface
+Acceptance testing - given to the end user to see if it meets their criteria
 
 
 ---------------------
@@ -46,9 +44,9 @@ Acceptanct testing - given to the end user to see if it meets thier criteria
 Comparing Test Types - group of test activities aimed at specific characteristics of the system
 
 Functional
-- tests functionallity
+- tests functionality
 - does it work as expected
-- does the unit/intergratio/system/UI work as expected
+- does the unit/integration/system/UI work as expected
 - Coverage is the degree which an application is tested as a percent
 - - How many of your tests work as a percent
 - - Coverage gap - The number of tests/features not passed testing/no testing exists
@@ -56,28 +54,44 @@ Non-functional
 - Answers the How fast/secure/easy to use the functions are to use
 
 Black-box
-- don't know about the internals of the software, just the requiremnt documentation.
-- varify iinput and output of the box in various ennviroments
+- don't know about the internals of the software, just the requirement documentation.
+- verify input and output of the box in various environments
 - performance test als can be done by timing input/outputs
 
 White-box
-- Testing a box/systme while also knowing the internal workings.
+- Testing a box/system while also knowing the internal workings.
 - like black box but often by the dev
 
 Change related testing
-- confermation testing check to see if a bugfix works as intended in it's specific area
-- Regression is a bug that occues due to a bug fix
+- conformation testing check to see if a bugfix works as intended in it's specific area
+- Regression is a bug that occurs due to a bug fix
 - regression testing checks th system for regressions
 - Test automations allow tests to be run and rerun at fast speeds to check a whole system.
-- Bugfix, new feature, changing existing feature, change in config or enviroment all can create regressions.
+- Bugfix, new feature, changing existing feature, change in config or environment all can create regressions.
 
 -------------------------------
 
-- a test may be a combination of above terms eg. black-box funtional confirmation testing
+- a test may be a combination of above terms eg. black-box functional confirmation testing
 - All are applicable but focus on the one that matters most for the context.
 
+-------------------------------
 
+Maintenance phase
 
+- Change categories
+- Planned
+- - Software enhancements
+- - Operational and environmental upgrades
+- - Retirement (rewriting in newer tech)
+- Unplanned
+- - Bugs or failures in production
+- - Hotfixes required
+
+Impact analysis
+- What, where a change takes place
+- Which parts are defiantly/likely to be affected
+- under time constraints, impact analysis tells which parts to prioritize
+- 
 
 
 
