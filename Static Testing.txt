@@ -167,15 +167,140 @@ Management
 - monitors cost effectiveness
 - Executes control decisions
 
+-----------
+
+Review types compared
+
+4 basic types:
+- Informal review
+- Walk through
+- Technical review
+- Inspection
 
 
+Informal review
+- common for agile models
+- Clarify user stories, confirm the details to leave no uncertainty.
+- purpose - detect defects, generate ideas
+- people - buddy developers
+- process- no formal structure
+- post-review - limited document (posit or story card)
+
+Walk though
+- Author prepares presentation
+- Aim it t find defects, improve product
+- Presentation made by author, minimal prep on viewers side
+- exchange ideas about techniques and style
+- large audience provides diverse viewpoints
+- - low chance of defect being missed.
+- May be boring for some and too fast for others
+- questions and clarification only
+
+Technical reviews
+- main purpose: gain consensus, find defects
+- generate new ideas, futures implementations
+- 6 to 8 people, technical peers of the leader
+- process:
+- - Planning, initiation, individual review, issue communications, fixing & reporting
+
+- process: formal, meeting optional
+- Post-review: fixing and reporting
+
+Inspection
+- follows a well-defined process
+- Leader selects the team members, each with specific roles
+- an entry criteria is made. A checklist is made to make sure the criteria is followed
+- Leader sets a checking rate so that optimal time use for defect finding
+- each member focuses on their role
+- meeting is run by a facilitator, not the author,
+- meeting is spent logging defects and issues at a constant rate
+- - no time spent on solutions
+- root cause analysis is applied to prevent future issues
+- post  meeting, metrics are logged: checking rates, logging rates, remaining defects per page.
+- leader checks the exit criteria:
+- - the review is complete
+- - complete with minor corrections
+- - needs a new review with major corrections
+
+Review type     Prep req.   meeting     Author led  Metrics
+----------------------------------------------------------------
+Informal        no          no          yes         no
+Walk though     no          yes         yes         no
+Technical       yes         optional    no          some
+Inspection      yes         yes         no          yes
 
 
+------------------------------------
 
+Applying the Review process
 
+Review the product not the person
 
+Organizational success factors
+- have a clear objective
+- choose appropriate review techniques
+- select suitable review techniques
+- have large documents reviewed in chunks
+- adequate notice, allow time to prepare
+- management support
+- involve the right people for the review
+- value the testers as reviewers
+- attention to detail
+- keep concentration, review in small chunks
+- knowledge defects, don't take it personally
+- manage meeting well
+- create an atmosphere of trust
+- training is essential
+- senior management should promote a culture of learning and continuous process improvement
 
+The review techniques
+- Ad-hoc
+- Checklist based
+- Scenario/dry runs
+- Role based
+- perspective-based
 
+Ad-Hoc
+- minimal prep
+- relays on reviewers expertise
+- no guidance given
+- work product read sequentially
+- duplicate issues are common
+
+Checklist based
+- leader creates a checklist based on historic defects
+- systematic method
+- checklists distributed at initiation
+- typical defects are covered
+- look outside the checklist
+- offers advice to reviewers
+- come in question format
+- derived from the (inspection) rules
+- ideally one checklist per work product
+- checklists must be updated
+- - new defects found
+- - old defects become non-issues
+- checklist is usually one page in length
+
+Scenario based
+- structures guidelines on reading
+- supports "Dry runs"
+- better guidelines than simple checklist
+- don't be contained to the documented scenarios
+
+Role based
+- evaluated from individual stake holder roles
+- role could be experienced user, novice user, devs, testers, tec.
+
+Perspective based reading
+- no specific procedure, it's based on the tailored procedures chosen for each perspective.
+- similar to role based review, reviews take stakeholder roles
+- attempts to use the work product
+- this give more depths
+- less reliance on individual expert
+- designer role aims for high system design, tester builds test plans etc.
+- PBR provides concrete instructions to help uncover defects
+- helps collect knowledge about best practices to help review.
 
 
 
