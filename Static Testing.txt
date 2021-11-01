@@ -1,0 +1,190 @@
+Static Testing
+
+Static testing catches faults early in a lifecycle
+
+Static testing does not require the system to run, Dynamic testing does.
+
+It's cheaper to remove defects found early, production defects can be costly
+
+test objectives:
+- Asses quality
+- Identify defects
+Static and Dynamic are complementary
+- each finding different defects
+
+Dynamic testing requires:
+- Test conditions identified,
+- then written
+- Test data sourced
+- test environment obtained
+- run test against the code
+- observe and report failures
+
+Static testing requires:
+- Code does not have to be run
+- Defects are found in the work products
+- dormant defects can be identified
+- - defect on rare path or obscure condition
+
+Defects in designed
+- Ineffective algorithms
+- ineffective database structures
+- High coupling, low cohesion
+
+It's easy to review small pieces of code but Static testing can work quickly across large amounts of code.
+
+------------------------------
+
+The Review process
+
+The process:
+- Planning
+- Initiation
+- preparation
+- issue communication
+- addressing, fixing, reporting
+
+Reviews catch defect migration by identifying issues early
+
+What is an issue:
+- potential defect
+- Recommendation (reviewer suggest a different method)
+- Question (reviewer is confused how a thing works)
+
+Formal review
+- TEam participation
+- Documented Results
+- Documented procedures
+Informal Review
+- No defined process
+no formal document output
+
+Review types:
+- Informal review
+- - detects potential defects and/or explores new ideas informally between few developers
+- Walk through
+- - led by author of te work product, to find defects and alt implementations. varies in formality.
+- Technical review
+- - Formal review including technical experts to find potential defects and find consensus
+- Inspection
+- - A very formal process where the team are given specific jobs to find potential defects, build confidence and prevent future defects through root cause analysis
+
+-------------
+
+How to plan a review
+
+~30% of the review
+
+Define the scope
+- what is the purpose
+- what is to be reviewed
+- identify quality characteristics
+
+Review characteristics
+- Review type
+- activities
+- assigned roles to the team members
+- checklist for the review
+
+Review leader selects the members of the review
+- choose a mixture of skills and experience
+
+Estimate effort and timeframe
+- size of document vs time allowed to check it
+- checking rate, how much time per page.
+
+Entry and exit criteria
+- what is needed to start (document formatting, people available etc.)
+- what criteria must be met to approve the work
+
+Initiate the review
+- face to face workshop
+- virtual meeting
+- a email might be enough
+- distribute the work product
+- leader explains the scope, objective, process, allocates roles, gives an overview
+- conclude the session with a Q&A
+
+---------------------------------
+
+How to run a review
+
+A review leader may initiate a meeting to communicate issues
+- potential defects
+- recommendations
+- answers questions
+- Avoid discussion of possible solutions
+- - instead keep the team focused defects and assign ownership and status to them.
+
+Quality characteristics
+- Evaluate issues raised
+- document the findings
+
+At end of review the team makes a decision vs exit criteria
+- Accept the product as is
+- accept with minor changes
+- reject for another review with major changes,
+
+Fixing and reporting
+- create defect report
+- author fixes defect
+- leader informs informs related personnel
+- update defect status
+- gathering metrics
+- check exit criteria
+- accept work product
+
+---------------------------------
+
+Roles and responsibilities
+
+Author
+- creates the work product
+- address the issue, fixing defects
+- answers questions at the review meeting
+
+Leader
+- Takes responsibility of the review
+- organises who will be involved
+
+Facilitator
+- organises meeting and makes sure they start on time and end timely
+- Also mediates the review to keep it productive
+
+Reviewer
+- Technical expert or key member of staff or business expert
+- brings their insight to the review
+
+Scribe
+- collated issue during the review
+- takes written form/notes
+- keeps track of defects open points and decisions of the meeting
+
+Management
+- responsible for review planning within the organisation
+- decides review strategy
+- assigned budget and time
+- monitors cost effectiveness
+- Executes control decisions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
