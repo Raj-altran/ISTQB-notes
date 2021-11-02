@@ -1,0 +1,96 @@
+Test Techniques
+
+Knowing a variety of test techniques allow you to test software more effectively
+
+----------------------------
+
+Black-box testing
+- Static black-box testing
+- - looking at the requirements and checking if they are used/needed in every case
+- Dynamic Black-box testing
+- - checking inputs and the returned outputs for a systems without knowing the internal workings
+- test requirements may include: user stories, use cases, other requirement documentation
+- test cases are used to detect deviations between requirements and implementation
+- Coverage is based on the items tested in the test basis
+- - also depends on the black box test technique applied
+- Cannot be performed at the component level
+
+White-box testing
+- you can see the processes inside the box
+- this testing is focus ont he analysis of the internal workings
+- tester must be knowledgeable in the language of the code
+- Static WB testing is looking at the code
+- dynamic WB testing is running the code and looking at it
+- - this is component/unit testing
+- test basis may include the form and structure of the code
+- cannot be done without code knowledge
+- coverage is based on the number of items tested within a selected structure
+- Can be performed at all test levels
+
+Experience based testing
+- Using personal experience but also experience from other devs, users and stakeholders
+- experience in other fields can be applied to testing in software field. E.g knowing children have poorer hand-ey coordination can be used to make a more child friendly app
+- Experience based can be used along side with BB and WB testing
+
+Selecting a test techniques
+- choose appropriate test conditions, cases and data
+- Time and budget constraints means experience based testing is more at as the little coverage that can be done will be better placed
+- informal test techniques are faster but formal (with documentation) is better for the whole team and safer in general
+- Formality level may not be an option
+- documentation availability can push you towards back box or white box techniques
+- tester experience can decide the best, BB for least experience and experienced based WB at the other end
+- SDLC model and system complexity decides formality and team preferences
+- multiple techniques can be used in a project, each where appropriate.
+
+-------------------------------------
+
+Applying Black box test techniques
+
+Equivalence partitioning
+- a boolean input can be checked with 2 test cases
+- a string input with size based requirement would require much more
+- - equivalence partitions allows a tester to only test the few non-equivalent test cases
+- - each partition is tested once eg. if the string must be 5< input length< 100, only 5, 100 and something between need to be tested
+- equivalence partition my apply to non-numerical values
+- EP can be applied at all test levels
+- coverage4 is the number of EP tested / total number of EP
+- EP cna be applied to any data type
+- Invalid partitions should not be tested simultaneously.
+
+Boundary value analysis
+- behaviour at partition boundary is more like to be faulty
+- using test far near the partition boundaries won't check if the boundaries are placed correctly
+- 2 point BVA checks the values either side a boundary
+- 3point BVA checks values either side and at a boundary
+- BVA coverage is number of values tested/ all identified boundary test values (as a percent)
+- can be applied to all test levels, usually for numerical/ sequential data
+- cannot be applied to unordered data
+
+Decision Table Testing
+- A decision table is a list of conditions, each labelled "condition", followed by a set of actions, labelled "action", in the 2 left most column
+- - each subsequent column is of a test case with set conditions and expected action
+- - - or n/a can be put in a table when a condition's status doesn't matter in the test case
+- The table is filled with all possible test cases
+- - a full decision table covers every combination of combined conditions
+- DTT can be used at all test levels
+
+Understanding State Transition Testing
+- system change state as events(input) are taken on it, e.g  a ATM changing as you put in your card and enter your pin
+- system may also take actions (output) when in dependant on it's states
+- not all stats can transition between one another, only certain state and in certain directions.
+- State transition table list has the system stats vs possible events, each cell shows state transition if any.
+- often used in menu-based applications and screen navigation
+- not suitable for larger systems with non-sequential inputs
+- Coverage is number of state transitions tested/ total number of state transitions.
+
+Use Case Testing
+- A teacher and student will use an online learning app differently, this is an example of two use cases
+- a use case describes a specific way to interact with a system
+- identifying use cases allows better understanding to create tests
+- coverage is number of use case tested/ total number of use cases.
+
+
+
+
+
+
