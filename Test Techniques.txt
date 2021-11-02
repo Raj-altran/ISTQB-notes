@@ -89,8 +89,48 @@ Use Case Testing
 - identifying use cases allows better understanding to create tests
 - coverage is number of use case tested/ total number of use cases.
 
+-----------------------------------
 
+Applying White Box Testing Techniques
 
+Statement testing
+- exercises executable statements in the code
+- Coverage is number of statements executed by the tests / total number of statements
+- Flowcharts can visualise the control flows of the code
+
+Decision testing
+- focus on the decision points of the flow of code
+- - eg if statements and switch cases
+- coverage is number of decision point outcomes tested / total number of decision point outcomes
+- decision point outcomes include all possible results from a decision point
+- 100% decision coverage implies 100 statement coverage but not vice versa.
+
+-------------------------------------
+
+Applying Experience based Test Techniques
+- using experience of yourself or others (peers, users, stakeholders etc)
+- using experience to estimate where errors will occur
+- - known as error guessing
+- experience can be of: user demographic, system requirements, new technology, 3rd party integration, caching issues
+- sources of inform to predict error sources:
+- - testers past experience, past failures
+- - general problems common to all software or sub-sector of software (eg. mobile devices)
+- - faulty data/database/input info errors
+- checklist items can be made better from experience and can create better coverage
+- - also has lower repeatability compared to formal test cases
+- Checklist items added like that of error guessing (you own experience, peers, users and stakeholders)
+
+Exploit testing
+- an iterative process where the tester logs the test and result
+- this can create documentation of the system
+- a review of the document then gives insight to the tester on the next are to explore
+- no defined coverage like other testing methods
+- session based exploit testing is carried out within a specific time-frame
+- - testing is guided by a test charter, activities may be documented using session sheets
+- ideally used when a system has little/no documentation
+- -relatively high coverage under tight time constraints
+- pairs well with other test techniques
+- - can use other techniques within exploit testing
 
 
 
