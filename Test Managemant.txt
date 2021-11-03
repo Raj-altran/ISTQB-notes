@@ -32,11 +32,375 @@ Test strategies
 - Regression averse, uses extensive test automation
 - reactive, require test to be written during test execution e.g exploit testing.
 
+When does testing start
+- estimate the timeframe for:
+- - Preparation analysis, writing tests
+- - Implementation, automation of tests, test runs
+- - Evaluation results, log defects, re-test
+- - Test levels (V model)
+- - Number of test cycles, at usually 2-4 cycles.
+- Scheduling all aspects of testing
+- - co-ordinating these with project owners and managers
+- - write th plan, make it accessible and keep it updated
+- Environment should be at production level,
+- - personal machines are quick to access but not ideal
+- using production environment, Advantages
+- - Problems in live can be replicated
+- - performance tests are  more realistic
+- - live customer data is available
+- disadvantages
+- - expensive
+- - virtual licences cost more
+- - data must be sanitised
+
+How are test carried out
+- balance of manual or automated testing
+- - agile often use more automated testing
+- acquire resources; people, hardware and software who/that fit the job
+- support the tools selected
+- defect management
+- configuration management eg. server setting, version control
+- introduce metrics to monitor and control progress
+- initiate the testing
+- progress should be monitored constantly
+- check the exit criteria
+- report the results
+- adapt plans while necessary
+
+------------------------------------------
+
+The tester
+
+the role of the tester
+- analyse, review and asses the test basis
+- set the objective of the week (or other timescale)
+- document test conditions
+- capture traceability
+- manager will design setup and verify the environment
+- identify test conditions, board cases
+- design and implement more detailed test cases and procedures
+- - build test database, prep the test data
+- create a schedule, prioritising high risk tests early
+- execute tests
+- - use appropriate tools
+- - automate some tests
+- do some ad-hoc/ exploratory testing
+- also test non-functional requirements
+- - also known as quality characteristics
+- - examples: performance, efficiency, usability, portability
+- different people may take on the role of the tested
+- specialist roles:
+- - technical test analyst
+- - test automation engineer
+- - performance tester
+- - security specialist penetration tester
+
+independent testing
+- can you find defects in your own work, are you (cognitive) bias
+- a degree of tester independence is useful
+- independence does not replace familiarity
+- levels of independence in testing:
+- - 1) None, all testing is done by developers on their own code
+- - 2) Some individuals in the team are dedicated testers
+- - 3) a team of testers exist within the org
+- - 4) testers come from the user community/business org
+- - 5) testers are external to the business (outsourced or insured)
+- lifecycle influences independence testing
+- Pros:
+- - recognised different kinds of failures, different perspective and bias
+- - verify, challenge or disprove assumptions
+- cons:
+- - isolation from the devs
+- - lose responsibility for quality
+- - testers seen as a bottleneck
+- - testers lack critical information
+
+-----------------------------
+
+Product risk analysis
+
+Types of risk
+- Product risk
+- - risk you customer ot business in case of faulty project
+- - eg software don't not meet specifications
+- - inadequate system architecture
+- - incorrect calculations
+- - slow response time
+- - poor user experience
+- - also known as quality risks
+
+
+- project risk
+- - internal risk, lack of resources, staff sickness or failure of delivery
+- - delays in delivery
+- - inadequate funding
+- - late changes
+- - organizational issues, eg untrained staff, personal issues, conflicting business priorities
+- - office politics, bad attitudes, failure to improve practices, poor communications,
+- - poorly defined requirements, existing constrains , env not ready, late data migration, variable quality of work products, technical debt
+- - 3rd party fails to deliver, contractual issues
+
+getting back on track
+- manager with create mitigation strategy:
+- hire contractors
+- work overtime
+- improve estimates in future
+- better manage changes (ie. no late changes)
+
+Risk based testing
+- impact: harm caused if software fails (rated 1-5)
+- - ideally all stakeholders provide input
+- likelihood: probability or chance (rated 1-5)
+- technical reasons decide it
+- risk level = impact x likelihood (in theory)
+- test manager can assign ranges are low, medium and high risk (eg. >10 is high risk)
+
+RBT Theory
+- Risk help tester focus their efforts
+- though testing high risk areas, a more secure product is made
+- RBT is pro-active
+- product risk analysis guids planning specification and execution of testing
+- risk management is used to:
+- - choose test techniques
+- - select levels and types of testing
+- - determine the depth of testing
+- - prioritize testing
+- - additional activities- provide training
+- uses the collective experience of the stakeholders, and technical staff
+
+------------------------------------
+
+Managing defects
+
+How to write defect report
+- reminder: Error -> Defect -> Failure
+- log defects from start to finish
+- reports aid resolution
+- context determines the process
+- see potential defect -> brief analysis to make sure -> track the defect through the process -> rerun test to check
+- Defects are reported early, even during coding in agile environments
+- static analysis and review reveals defects
+- dynamic testing find most defects
+- using the product can reveal defects
+
+- defects  found in code, working software, and even documentation
+- defect reports provide enough information for a resolution
+- reports give feedback on quality
+- reports can produce new ideas
+
+- report must have an ID, a Title, Summery
+- a date, org, and your name
+- identification of the test item, status of the defect, lifecycle phase and environment when defect found, detailed explanation to reproduce the problem
+- change history, global issues, conclusions/ recommendations/approvals
+
+the defect management process
+- "New" status indicates a fresh defect just found and reported
+- "Open" Status indicates a new defect that has been verified as a defect open to fixing
+- "Fixing" status is under the  process of being fixed
+- "Ready" status indicates the fix is ready for retesting
+- "Retest" status is for those being re-tested, if the test fails, it'll go to re-open (functionally same as "Open")
+- "Closed" status indicates the defect is no longer an issue
+- "Reject" status says a defect could not be reproduced and so is rejected and then "Closed"
+- - Duplicate defects can also be rejected
+
+configuration management
+- purpose is to establish and maintain the integrity of the component or system
+- - the test ware and their relationship[ to one another through the project
+- test cases, scripts, data, server settings and any other environmental or network configuration parameters
+- configuration management procedures and tools are identified and implemented during test planning
+
+How to write a test plan
+
+purpose of a test plan
+- test planning attempts to focus the team on all tasks that need to be accomplished
+- test policy explains why test
+- test strategy explains what will be tested
+- test plan is how the testing will be carried out
+- sequential models (waterfall, V-model) will include a master test plan
+- Agile model will have a four quadrant style for test plans
+- test objective effect the plan
+- Risks, constraints, testability of each test item, resources available all effect a test plan
+- A master test plan will have separate test plans for each level
+- - these plans can be separated by repurpose also eg. network test plan or usability test plan
+-
+
+test planning activities
+- determine scope, create objectives
+- chosen approach
+- integration and coordination
+- decide who, what and how
+- schedule the implementation
+- choose metrics to track the testing progress
+- budget the testing
+- create templates to provide structure
+- test planning is a continuous process as more information comes in
+
+
+Test strategy and test approach
+- test strategy depends on context
+- 1) Analytical
+- - Risk based testing, look at high risk areas first
+- 2) model-based
+- -  test cases are based on a model of some aspect of the product
+- - reliability growth model would be applicable
+- - business process models
+- - state models look at system states
+- 3) Methodical strategy
+- - Systematic use of pre-defined test
+- - eg. looking at a list of common defects and working through it
+- - checklist of quality characteristics
+- - standard for webpage or app
+- 4) process compliant
+- - tests based on external standards, e.g industry standards
+- - process documentations
+- - standards can be imposed on your org
+- - rigorous use of test basis
+- 5) Directed
+- - Advice from Stakeholder, business domain experts or technology experts who offer advice guidance or specific instructions
+- - also know as consultative strategy
+- 6) regression adverse
+- - avoid regression issue
+- - re-use existing test cases
+- - much use of automated regression tests
+- - standard test suits
+- 7) reactive
+- - testing reacts to component or system
+- - simultaneous test design and execution
+- - eg. explosively testing
+
+entry and exit criteria
+- allows the manager effective control over the quality
+
+- entry criteria allow the team to pick up the testing better equipped
+- - definition of ready in agile model
+- - availability of requirements, stories, models
+- - test items#
+- - test environment set up and ready
+- - database and data ready
+- - teat tools installed and available for use
 
 
 
+- exit criteria define the conditions to be met to call the test complete
+- - definition of done in agile model
+- - planned tests have been run
+- - coverage level achieved
+- - unresolved defects under a benchmark
+- - level of quality characteristics
+- testing may stop prematurely
+- - eg. no more budget, time or other reason the product must go to market.
+- - stakeholder must agree to call it when it's done
 
+- both entry and exit should be defined for each test level and type and will differ based on the objective
 
+------------------------------------------
+
+Applying estimation techniques
+
+test execution schedule
+- product, people, process and results can influence time estimation
+- metric based and expert based techniques
+- ordering tests by priority, but the tests may be dependant on each other
+- balance the efficient of test execution with test priority
+
+factors influencing the test effort
+- product
+- product risk
+- test based quality
+- size an complexity
+- quality characteristics
+- test documentation detail
+- legal and regulatory constraints
+
+- people
+- skills knowledge and experience or lack of the team members
+- team cohesion and leadership
+- Org maturity
+
+- process
+- development model
+- Test approach
+- tools used
+- test process
+- time pressures
+
+- results
+- the number and severity of defects found
+- the amount of rework required
+
+Test Estimation Techniques
+- early estimates can be very off
+- metric based estimation
+- - burn-down charts
+- - defect removal model
+- expert based techniques
+- - planning poker
+- - wide-band delphi
+- - - choose the team, appoint a moderator
+- - - kick off meeting, assumptions are discussed and the breakdown of the work and units to use (hrs or man dats etc.)
+- - - each expert estimates the tasks individually
+- - - the moderator collates and gives out the estimate, the expert then re consider their values
+- - - the process iterated until consensus is achieved and the results are reviewed
+- don't forget to estimate ALL activities
+- test prep should also e included
+- - 8weeks of prep make 2 weeks of test
+- - number of test Cycles
+- - team productivity
+- agile teams can reduce early uncertain after a few iterations
+- - or presenting a rage of numbers
+- incremental funding can properly invest based on performance.
+
+-----------------------------------
+
+Keeping track of progress
+
+test monitoring and control
+- monitor test activity and take control when things go wrong
+- collecting data about test activity to send to stakeholders
+- control it the get things on track when they arnt going to plan
+- common metric
+- - when to use  and why
+- test reporting for specific audience
+
+Common Metrics
+- Planned work done
+- Test cases executed
+- - tests returned
+- defects information
+- coverage metrics
+- tasks completed
+- costs
+
+Metrics can asses
+- test approach
+- quality
+- progress vs plan
+
+Test control options
+- Re-prioritise tests
+- Change the test schedule
+- re-evaluate test items entry/exit criteria
+- add more resources
+
+Test Reporting
+- the metrics must be summarised to be reported
+- there are two types of report
+- - test progress report which happened during
+- - test summary report at the exit criteria
+- typical test report contents:
+- - summary od testing performed, information on what happened during test period
+- - deviations from the plan, status of testing and product quality
+- - Blockers, metrics, residual risks
+- - reusable test work products produced
+- status of testing activities and progress against plan
+- factor impeding progress
+- plans for next phase or iteration
+- quality of test object
+
+test Reporting
+- tailor the report to your audience
+- executive wants overview
+- technical q&a needs details
 
 
 
