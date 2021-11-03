@@ -1,0 +1,48 @@
+Test Management
+
+The role of the Test Manager
+- focus on critical high risk area
+- test as early as possible
+- - test manager schedules all test events including prep
+- test are run on production equivalent environment
+- Tests are manual or automated
+
+- test manager role can be taken up by the dev, project r QA manager if test manager role don't exist
+- test coach/ manages multiple teams
+- insufficient test may result in : customer complaints, impact on profits, damage to company reputation
+- Test Policy is an Organization wide brief on why to test
+- - outlines te process
+- - how test are evaluated
+- - Quality levels expected
+- - process improvement
+- test strategy is a context dependant on what to test
+- - Clear Scope of testing
+- - do the team members require help or resources
+- - what approach to take
+- - What are the criteria
+- - what environment will the tests be done
+- - SPACE: Scope, People, Approach, criteria, environment
+
+Test strategies
+- Analytical, eg. a risk based testing strategy
+- Model-based, tests designed on business process or state model
+- Methodical, relying on a taxonomy of common failure types or other checklist
+- process compliant, based on rigorous rules and standards
+- Directed, driven by stakeholders or business experts
+- Regression averse, uses extensive test automation
+- reactive, require test to be written during test execution e.g exploit testing.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
